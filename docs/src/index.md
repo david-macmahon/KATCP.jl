@@ -104,8 +104,8 @@ just 4 byte memories.
     All reads and writes in `KATCP.jl` must be aligned on 4 byte boundaries.
     Currently, `read` only returns `UInt32` values.  Some conversion from other
     Integer types are supported by `write`, but this is subject to change.  You
-    are stronly encouraged to `reinterpret` or `convert` your data as needed if
-    you desire a different numerical type.
+    are strongly encouraged to `reinterpret` or `convert` your data as needed
+    if you desire a different numerical type.
 
 ```@docs
 read(::KATCP.Client, ::Any, ::Any, ::Any)
