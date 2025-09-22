@@ -1,7 +1,7 @@
 name = "KATCP"
 uuid = "16d53293-3c61-4d20-8ed2-7f05333d7c0c"
 authors = ["David MacMahon <davidm@astro.berkeley.edu>"]
-version = "0.0.1"
+version = "0.0.2"
 
 [deps]
 Sockets = "6462fe0b-24de-5631-8697-dd941f90decc"
