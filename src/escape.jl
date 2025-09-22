@@ -48,4 +48,4 @@ escapejoin(words::AbstractVector, delim=" ") = join(escape.(words), delim)
 
 Split `escapedwords` on whitespace and unescape each word.
 """
-splitunescape(escapedwords::AbstractString) = unescape.(split(escapedwords))
+splitunescape(escapedwords::AbstractString) = unescape.(split(escapedwords,  r"[ \t]+"))
