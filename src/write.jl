@@ -24,3 +24,4 @@ Writes `data` to 32-bit regsiter named `name` using `client`.
 """
 regwrite(client::Client, name, data::UInt32) = write(client, name, [data], 0)
 regwrite(client::Client, name, data::Integer) = regwrite(client, name, data%UInt32)
+regwrite(client::Client, name, data) = regwrite(client, name, Integer(data))
